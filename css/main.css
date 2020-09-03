@@ -198,12 +198,6 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .products-section-list-item:not(:last-child) {
-    margin-bottom: 130px;
-  }
-}
-
 .products-section-list-item-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -280,13 +274,13 @@ img {
   margin: 0 auto;
   width: 40px;
   height: 40px;
-  background-image: url(../../images/products-section/icon-arrow.png);
+  background-image: url(../images/products-section/icon-arrow.png);
   background-size: 40px 40px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products-section-list-item-link {
-    background-image: url(../../images/products-section/icon-arrow@2x.png);
+    background-image: url(../images/products-section/icon-arrow@2x.png);
   }
 }
 
