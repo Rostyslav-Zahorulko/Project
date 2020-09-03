@@ -1,0 +1,238 @@
+.products-section {
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
+
+.products-section-title {
+  margin-top: 0;
+  margin-bottom: 144px;
+
+  font-family: $secondary-font-family;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1667;
+  text-align: center;
+  text-transform: uppercase;
+  color: $tertiary-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+
+    font-size: 26px;
+    line-height: 1.1538;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 259px;
+
+    font-size: 30px;
+    line-height: 1.1333;
+  }
+}
+
+.products-section-title-second-part {
+  display: block;
+  padding-top: 15px;
+
+  font-size: 34px;
+  line-height: 1.1471;
+  letter-spacing: 0.04em;
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.1458;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.1379;
+  }
+}
+
+.products-section-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
+}
+
+.products-section-list-item {
+  position: relative;
+
+  padding-top: 161px;
+  padding-bottom: 41px;
+  padding-right: 41px;
+  padding-left: 39px;
+  border-radius: 24px;
+
+  &.ice-cream {
+    background-color: $tertiary-background-color;
+  }
+
+  &.ice-coffee {
+    background-color: $quaternary-background-color;
+  }
+
+  &.milkshakes {
+    background-color: $quinary-background-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 10px;
+    flex-basis: calc((100% - 60px) / 3);
+    padding-top: 152px;
+    padding-bottom: 40px;
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 15px;
+    flex-basis: calc((100% - 72px) / 3);
+    padding-top: 163px;
+    padding-bottom: 50px;
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 130px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products-section-list-item:not(:last-child) {
+    margin-bottom: 130px;
+  }
+}
+
+.products-section-list-item-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-family: $secondary-font-family;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 1.1333;
+  }
+}
+
+.products-section-list-item-dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+
+  background-color: $primary-background-color;
+
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.products-section-list-item-description {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    max-height: 124px;
+
+    line-height: 1.7857;
+
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 62px;
+    max-height: 106px;
+
+    line-height-step: 1.75;
+
+    font-size: 16px;
+  }
+}
+
+.products-section-list-item-link {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+
+  background-image: url(../../images/products-section/icon-arrow.png);
+  background-size: 40px 40px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .products-section-list-item-link {
+    background-image: url(../../images/products-section/icon-arrow@2x.png);
+  }
+}
+
+.products-section-list-item-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.products-section-list-item-picture {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+
+  transform: translate(16px, -346px);
+
+  @media screen and (min-width: 768px) {
+    transform: translate(0, -363px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    transform: translate(-3px, -400px);
+    width: 335px;
+  }
+}
